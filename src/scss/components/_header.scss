@@ -60,11 +60,14 @@
 }
 
 .header__bottom-inner {
+   display: flex;
+   column-gap: 60px;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .main-menu__list {
    display: flex;
-   flex-flow: row nowrap;
    column-gap: 26px;
    align-items: center;
    justify-content: space-between;
@@ -72,8 +75,21 @@
 
 .main-menu__link {
    display: flex;
+   align-items: center;
    column-gap: 5px;
    font-weight: 400;
    font-size: 16px;
    color: var(--menu-dark-grey);
+}
+.main-menu__link-item {
+   display: block;
+   width: 6px;
+   height: 4px;
+
+   svg,
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
 }
