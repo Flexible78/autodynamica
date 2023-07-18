@@ -1,5 +1,5 @@
 .header__top-line {
-   padding: 17px 0;
+   padding: 17px 0 16px;
    font-weight: 500;
    font-size: 14px;
    color: var(--color-white);
@@ -8,7 +8,7 @@
 
 .header__top-inner {
    display: flex;
-   column-gap: 80px;
+   column-gap: 79px;
    align-items: center;
    padding-left: 116px;
 }
@@ -50,6 +50,7 @@
    font-size: 12px;
    color: #e2e2e2;
 }
+
 .header-top-item__text--ml {
    margin-left: 5px;
 }
@@ -66,6 +67,11 @@
    justify-content: space-between;
 }
 
+.main-menu {
+   font-weight: 500;
+   font-size: 16px;
+}
+
 .main-menu__list {
    display: flex;
    column-gap: 26px;
@@ -75,12 +81,13 @@
 
 .main-menu__link {
    display: flex;
+   column-gap: 6px;
    align-items: center;
-   column-gap: 5px;
    font-weight: 400;
    font-size: 16px;
    color: var(--menu-dark-grey);
 }
+
 .main-menu__link-item {
    display: block;
    width: 6px;
