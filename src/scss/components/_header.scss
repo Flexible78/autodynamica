@@ -10,10 +10,16 @@
    display: flex;
    column-gap: 79px;
    align-items: center;
+   justify-content: space-between;
    padding-left: 116px;
 }
 
 .header__top-item {
+   @include focus;
+   @include focus&focus-visible;
+}
+
+.header-top-item {
    display: flex;
    column-gap: 5px;
    align-items: center;
@@ -56,15 +62,14 @@
 }
 
 .header__bottom-line {
-   padding: 25.5px 0;
+   padding: 22px 0;
    background-color: var(--white);
 }
 
 .header__bottom-inner {
    display: flex;
-   column-gap: 60px;
+   column-gap: 99.4px;
    align-items: center;
-   justify-content: space-between;
 }
 
 .main-menu {
