@@ -103,7 +103,8 @@
 .header__bottom-inner {
    display: flex;
    flex-wrap: wrap;
-   column-gap: 99.4px;
+   // column-gap: 99.4px;
+   justify-content: space-between;
    row-gap: 10px;
    align-items: center;
 }
