@@ -5,8 +5,8 @@
 .footer__inner {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
-   column-gap: 30px;
-   row-gap: 50px;
+   column-gap: 28px;
+   row-gap: 31px;
    align-items: flex-start;
    padding: 40px 0 60px;
 }
@@ -28,31 +28,105 @@
    grid-column: 4 span;
 }
 
-.contacts-list__text {
+.footer-contacts__mail {
+   margin-top: 15px;
+}
+
+.footer-contacts__address {
+   margin-top: 23px;
+}
+
+.footer__text {
    font-weight: 400;
    font-size: 14px;
    color: var(--color-white);
 }
 
-.contacts-list__text--fz12 {
+.footer__text--fz12 {
    font-size: 12px;
 }
 
-.contacts-list__text--fz24 {
+.footer__text--fz24 {
    font-size: 24px;
 }
 
-.contacts-list__text--fw500 {
+.footer__text--fw500 {
    font-weight: 500;
 }
 
-.contacts-list--underline {
+.footer__text--underline {
+   padding-top: 13px;
    text-decoration: underline;
 }
-.footer__cars-list {
-   grid-column: 5 span;
-}
+
 .footer__text--fz16 {
    font-weight: 600;
    font-size: 16px;
+}
+
+.footer__text--opacity {
+   opacity: 0.8;
+}
+
+.footer__cars-list {
+   grid-column: 5 /span 2;
+   padding-top: 17px;
+}
+
+.cars-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 7px;
+}
+
+.footer__cars-body-options {
+   grid-column: 7 /span 2;
+   padding: 17px 0 0 18px;
+}
+
+.cars-body-options {
+   display: flex;
+   flex-direction: column;
+   row-gap: 9.6px;
+}
+
+.footer__services-list {
+   grid-column: 9 /span 2;
+   padding: 17px 0 0 7px;
+}
+
+.services-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 7px;
+}
+
+.footer__company-about-list {
+   grid-column: 11 /span 2;
+   padding-top: 17px;
+}
+
+.company-about-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 7px;
+}
+
+.footer__disclaimer {
+   display: grid;
+   grid-column: 1 / -1;
+}
+
+.footer-disclaimer {
+   display: flex;
+   flex-direction: column;
+   row-gap: 2px;
+}
+
+.footer-disclaimer__text {
+   padding-right: 9px;
+}
+
+.footer-disclaimer__legal-info {
+   padding-right: 277px;
 }
