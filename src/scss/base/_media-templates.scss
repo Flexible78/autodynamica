@@ -95,7 +95,7 @@
 }
 
 @mixin max360 {
-   @media (max-width: 360px) {
+   @media (max-width: 428px) {
       @content;
    }
 }
