@@ -6,7 +6,7 @@
   },
   "extends": ["airbnb/base"],
   "rules": {
-    "indent": ["warnings", 3],
+    "indent": ["warn", 3],
     "no-plusplus": "off",
     "max-len": ["off", 120],
     "no-tabs": "off",

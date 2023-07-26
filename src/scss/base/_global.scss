@@ -6,6 +6,17 @@
    padding: 0;
 }
 
+* {
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 4px solid var(--focus-main-color);
+      outline-offset: 2px;
+   }
+}
+
 .btn_reset {
    border: none;
    color: inherit;
@@ -101,15 +112,15 @@ body {
    margin: 0 auto;
    padding: 0 var(--container-safety-indents);
 
-   // @media (max-width: 1258px) {
-   //    --container-max-width: 940px;
-   // }
+   @media (max-width: 1258px) {
+      --container-max-width: 940px;
+   }
 
-   // @media (max-width: 834px) {
-   //    --container-max-width: 460px;
-   // }
+   @media (max-width: 834px) {
+      --container-max-width: 460px;
+   }
 
-   // @media (max-width: 360px) {
-   //    --container-max-width: 300px;
-   // }
+   @media (max-width: 360px) {
+      --container-max-width: 300px;
+   }
 }
