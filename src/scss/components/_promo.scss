@@ -1,5 +1,5 @@
 .promo {
-   padding: 48px 0 53px;
+   padding: 78px 0 53px;
    color: var(--header-black);
    background-color: var(--color-white);
 }
@@ -15,6 +15,7 @@
 
 .promo-content {
    position: relative;
+   z-index: 15;
    font-weight: 400;
    font-style: normal;
    font-size: 12px;
@@ -31,8 +32,9 @@
 
    img {
       position: absolute;
-      top: 1px;
-      left: 235px;
+      bottom: 140px;
+      left: 224px;
+      z-index: 5;
       width: 100%;
       height: 100%;
       object-fit: none;
@@ -46,31 +48,49 @@
 }
 
 .promo-content__title {
+   z-index: 15;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
    font-size: 28px;
+
    span {
-      text-transform: uppercase;
+      margin-bottom: 5px;
       font-weight: 600;
       font-size: 42px;
+      text-transform: uppercase;
    }
 }
 
 .promo-content__price {
-   margin-top: 10px;
+   margin-top: 5px;
    font-weight: 600;
    font-size: 28px;
    color: var(--color-red);
 }
 
 .promo-content__tags {
+   z-index: 15;
+   display: flex;
+   flex-wrap: nowrap;
+   column-gap: 1px;
    margin-top: 25px;
    font-weight: 400;
    color: var(--color-white);
 
+   a:first-child {
+      border-radius: 2.5px 0 0 2.5px;
+   }
+
+   a:last-child {
+      border-radius: 0 2.5px 2.5px 0;
+   }
+
    a {
-      padding: 11px 0 12px 10px;
-      background-color: var(--menu-black);
       width: 120px;
       border: solid 1px color var(--color-white);
+      padding: 10px 0 10px 8px;
+      background-color: var(--menu-black);
    }
 
    span {
@@ -80,6 +100,9 @@
 }
 
 .promo-content__text-bottom {
+   z-index: 15;
+   margin-top: 11px;
+   line-height: 1.15;
 }
 
 .swiper-pagination {
