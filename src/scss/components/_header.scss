@@ -5,11 +5,11 @@
    color: var(--color-white);
    background-color: var(--menu-black);
 
-   @include max1258 {
+   @media (max-width: 1258px) {
       padding: 12px 0;
    }
 
-   @include max834 {
+   @media (max-width: 834px) {
       padding: 12px 0;
    }
 }
@@ -23,26 +23,26 @@
    justify-content: space-between;
    padding-left: 116px;
 
-   @include max1258 {
+   @media (max-width: 1258px) {
       column-gap: 59px;
       padding-left: 6px;
    }
 
-   @include max834 {
+   @media (max-width: 834px) {
       column-gap: 40px;
       padding-left: 78px;
    }
 
-   @include max488 {
+   @media (max-width: 488px) {
       column-gap: 20px;
    }
 
-   @include max460 {
+   @media (max-width: 460px) {
       column-gap: 16px;
       padding-left: 81px;
    }
 
-   @include max320 {
+   @media (max-width: 320px) {
       padding-left: 50px;
    }
 }
@@ -58,19 +58,19 @@
 }
 
 .header-top-item__work-hours {
-   @include max834 {
+   @media (max-width: 834px) {
       display: none;
    }
 }
 
 .header-top-item__phone {
-   @include max460 {
+   @media (max-width: 460px) {
       display: none;
    }
 }
 
 .header-top-item__icon--phone {
-   @include max460 {
+   @media (max-width: 460px) {
       display: none;
    }
 }
@@ -79,7 +79,7 @@
    display: flex;
    column-gap: 5px;
 
-   @include max834 {
+   @media (max-width: 834px) {
       display: none;
    }
 }
@@ -93,7 +93,7 @@
 .header__burger {
    display: none;
 
-   @include max1258 {
+   @media (max-width: 1258px) {
       display: flex;
    }
 }
@@ -144,7 +144,7 @@
    padding: 22px 0;
    background-color: var(--white);
 
-   @include max1258 {
+   @media (max-width: 1258px) {
       padding: 20px 0;
    }
 }
@@ -166,14 +166,14 @@
       transform: scale(1.09);
    }
 
-   @include max1258 {
+   @media (max-width: 1258px) {
       --width: 140px;
       --height: 26px;
    }
 }
 
 .header__main-menu {
-   @include max1258 {
+   @media (max-width: 1258px) {
       display: none;
    }
 }
