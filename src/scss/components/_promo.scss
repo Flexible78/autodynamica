@@ -62,11 +62,12 @@
 }
 
 .promo-content__img {
-   --width: 875px;
+   --width: 685px;
    --height: 368px;
 
    position: absolute;
-   top: 0;
+   top: -0.6%;
+   right: -1.1%;
    z-index: 5;
    width: var(--width);
    height: var(--height);

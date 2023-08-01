@@ -1,10 +1,13 @@
 const promoSwiper = new Swiper('.swiper', {
    direction: 'horizontal',
+   slidesPerView: 1,
    loop: true,
    pagination: {
       el: '.swiper-pagination',
    },
-   keyboard: {
-      enabled: true,
+
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
    },
 });
