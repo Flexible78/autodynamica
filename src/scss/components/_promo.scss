@@ -245,10 +245,15 @@
 
 .swiper-pagination {
    --swiper-pagination-bullet-size: 16px;
-   --swiper-theme-color: var(--header-black);
-   --swiper-pagination-color: var(--header-black);
+   --swiper-theme-color: var(--light-grey);
+   --swiper-pagination-color: var(--light-grey);
    --swiper-pagination-bullet-horizontal-gap: 10px;
    --swiper-pagination-bullet-vertical-gap: 6px;
    --swiper-pagination-bottom: -2px;
+
    // --swiper-pagination-top: 1px;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: var(--header-black);
 }
