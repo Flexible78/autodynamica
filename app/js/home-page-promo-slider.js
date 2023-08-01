@@ -1,6 +1,5 @@
 const promoSwiper = new Swiper('.swiper', {
    direction: 'horizontal',
-   slidesPerView: 1,
    loop: true,
    pagination: {
       el: '.swiper-pagination',
