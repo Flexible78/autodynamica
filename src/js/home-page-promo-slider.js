@@ -1,7 +1,6 @@
-const promoSlider = new Swiper('.swiper', {
+const promoSwiper = new Swiper('.swiper', {
    direction: 'horizontal',
    loop: true,
-
    pagination: {
       el: '.swiper-pagination',
    },
