@@ -1,0 +1,23 @@
+.search-form {
+   padding: 40px 0 50px;
+   color: var(--color-white);
+   background-color: var(--menu-black);
+}
+
+.search-form__container {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   column-gap: 30px;
+}
+
+.search-form__title {
+   grid-column: 6 span;
+   font-weight: 600;
+   font-size: 32px;
+}
+
+.search-form__btns {
+   display: flex;
+   column-gap: 30px;
+   grid-column: 6 span;
+}
