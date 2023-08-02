@@ -248,30 +248,33 @@
          <a class="search-form__btn form-field__btn" href="#">С пробегом</a>
          <a class="search-form__btn form-field__btn" href="#">Авто для такси</a>
       </div>
-      <fieldset class="search-form__criterias search-form-criterias">
-         <label class="form-field application-form__field" for="model">
-            <span class="search-form-criterias__caption form-field form-field__caption form-field__caption--regular"
-               >Марка</span
-            >
-            <input
-               class="form-field__input form-field__input--regular form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
-               id="model"
-               name="model"
-               placeholder="Марка"
-               type="text" />
-            <span>
-               ><svg>
-                  <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-            ></span>
-         </label>
+      <ul class="search-form__criterias search-form-criterias">
+         <li>
+            <a class="search-form-criterias__item" href="#">
+               <span>Марка</span>
+               <span
+                  ><svg>
+                     <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
+               ></span>
+            </a>
+         </li>
+         <li>
+            <a class="search-form-criterias__item" href="#">
+               <span>Модель</span>
+               <span
+                  ><svg>
+                     <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
+               ></span>
+            </a>
+         </li>
 
-         <span
-            ><svg>
-               <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-         ></span>
-         <span>Цена от</span>
-         <span>Цена до</span>
-      </fieldset>
+         <li>
+            <a class="search-form-criterias__item" href="#">
+               <span>Цена от</span>
+               <span>Цена до</span>
+            </a>
+         </li>
+      </ul>
    </div>
 </section>
 
