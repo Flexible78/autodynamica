@@ -12,9 +12,6 @@
    }
 }
 
-.swiper {
-}
-
 .swiper--offsets {
    padding-bottom: 41px;
 
@@ -29,12 +26,6 @@
    @media (max-width: 428px) {
       padding-bottom: 32px;
    }
-}
-
-.swiper-wrapper {
-}
-
-.swiper-slide {
 }
 
 .promo-content {
@@ -96,27 +87,19 @@
    }
 
    @media (max-width: 834px) {
-      --width: 568px;
+      --width: 100%;
       --height: 240px;
 
       top: 47.1%;
-      right: -13.5%;
+      right: 0;
    }
 
    @media (max-width: 488px) {
-      --width: 420px;
       --height: 172px;
-
-      top: 111.1%;
-      left: 0;
    }
 
    @media (max-width: 428px) {
-      --width: 360px;
       --height: 152px;
-
-      top: 47.3%;
-      left: -9.9%;
    }
 }
 
