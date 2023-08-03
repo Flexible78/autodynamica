@@ -1,0 +1,31 @@
+.btn {
+   display: flex;
+   margin: 0 auto;
+   border-radius: 4px;
+   padding: 20px 86px;
+   color: var(--color-white);
+   background-color: var(--color-red);
+}
+
+.btn__outline {
+   border: 1px solid var(--color-white);
+   background-color: transparent;
+}
+
+.btn__outline--black {
+   border: 1px solid var(--header-black);
+   background-color: transparent;
+}
+
+.btn__outline--small {
+   padding: 10.5px 28.5px;
+}
+
+.btn__outline--regular {
+   padding: 10px 45px;
+}
+
+.btn__outline--large {
+   padding: 10px 54px;
+}
+

@@ -19,27 +19,3 @@
    border: 1px solid var(--header-black);
    padding: 15.5px 10px;
 }
-
-.btn {
-   display: flex;
-   margin: 0 auto;
-   border-radius: 4px;
-   padding: 20px 86px;
-   color: var(--color-white);
-   background-color: var(--color-red);
-}
-
-.btn__outline {
-   background-color: transparent;
-   border: 1px solid var(--color-white);
-}
-
-.btn__outline--small {
-padding: 12px 11.5px;
-}
-.btn__outline--regular{
-   padding: 10px 45px;
-}
-.btn__outline--middle{
-   padding: 10px 45px;
-}
