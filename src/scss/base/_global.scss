@@ -107,6 +107,35 @@ body {
    flex-grow: 1;
 }
 
+.grid-layout {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   column-gap: 30px;
+
+   @media (max-width: 1258px) {
+      column-gap: 20px;
+   }
+
+   @media (max-width: 834px) {
+      grid-template-columns: repeat(6, 1fr);
+   }
+
+   @media (max-width: 360px) {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+.visually-hidden {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 0;
+   height: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
 .container {
    max-width: calc(var(--container-max-width) + 2 * var(--container-safety-indents));
    margin: 0 auto;

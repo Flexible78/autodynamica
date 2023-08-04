@@ -1,0 +1,95 @@
+<section class="car-selection">
+   <div class="container">
+      <form class="car-selection-form grid-layout" action="#">
+         <h2>Подобрать автомобиль</h2>
+         <fieldset class="car-selection-form__car-type car-selection-form-car-type">
+            <legend class="visually-hidden">Выбор типа авто</legend>
+            <label class="car-selection-form__radio-btn" for="car-selection-form__new">
+               <input class="radio-btn-basic" id="car-selection-form__new" name="car-type" type="radio" value="Новые" />
+               <span>Новые</span>
+            </label>
+            <label class="car-selection-form__radio-btn" for="car-selection-form__1">
+               <input
+                  class="radio-btn-basic"
+                  id="car-selection-form__1"
+                  name="car-type"
+                  type="radio"
+                  value="С пробегом" />
+               <span>С пробегом</span>
+            </label>
+            <label class="car-selection-form__radio-btn" for="car-selection-form__2">
+               <input
+                  class="radio-btn-basic"
+                  id="car-selection-form__2"
+                  name="car-type"
+                  type="radio"
+                  value="Для такси" />
+               <span>Для такси</span>
+            </label>
+         </fieldset>
+
+         <select class="car-selection__select" id="" name="model"></select>
+         <select class="car-selection__select" id="" name="model"></select>
+
+         <fieldset class="car-selection-form__price">
+            <legend class="visually-hidden">Установить диапазон цен</legend>
+            <input id="car-selection-price" name="car-selection-price" type="text" />
+            <input id="car-selection-price" name="car-selection-price" type="text" />
+         </fieldset>
+         <input type="submit" value="Подобрать " />
+         <!--
+         <div class="car-selection-select__dropdown">
+            <ul class="car-selection-select__options-list">
+               <li>
+                  <button>Audi</button>
+               </li>
+               <li>
+                  <button>Lada</button>
+               </li>
+               <li>
+                  <button>Запорожец</button>
+               </li>
+               <li>
+                  <button>Volkwagen</button>
+               </li>
+               <li>
+                  <button>Mazda</button>
+               </li>
+            </ul>
+         </div>
+         <div class="car-selection__select car-selection-select">
+            <button class="car-selection-select__trigger">
+               <span class="car-selection-select__selected-text">Модель</span>
+               <span class="car-selection-select__dropdown-icon"
+                  ><svg>
+                     <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
+               ></span>
+            </button>
+            <div class="car-selection-select__dropdown">
+               <ul class="car-selection-select__options-list">
+                  <li>
+                     <button>A8</button>
+                  </li>
+                  <li>
+                     <button>A4</button>
+                  </li>
+                  <li>
+                     <button>Q5</button>
+                  </li>
+                  <li>
+                     <button>3 sedan</button>
+                  </li>
+                  <li>
+                     <button>Cabrio</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <a class="car-selection-criterias__item" href="#">
+            <span>Цена от</span>
+            <span>Цена до</span>
+         </a> -->
+      </form>
+   </div>
+</section>

@@ -1,0 +1,59 @@
+.car-selection {
+   padding: 40px 0 50px;
+   color: var(--color-white);
+   background-color: var(--menu-black);
+}
+
+h2 {
+   grid-column: 6 span;
+   font-weight: 600;
+   font-size: 32px;
+}
+
+.car-selection-form__car-type {
+   // display: flex;
+   column-gap: 30px;
+   grid-column: 6 span;
+}
+
+.car-selection-form-car-type {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   column-gap: 30px;
+}
+
+/* .radio-btn-basic {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   appearance: none;
+} */
+.radio-btn-basic {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.car-selection-form__radio-btn {
+   grid-column: 2 span;
+
+   span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-white);
+      border-radius: 4px;
+      padding: 10.5px 0;
+      background-color: transparent;
+   }
+}
+
+.car-selection-form__price {
+   grid-column: 3 span;
+}
