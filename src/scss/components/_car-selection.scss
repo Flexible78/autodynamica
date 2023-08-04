@@ -12,10 +12,10 @@ h2 {
 
 .car-selection-form {
    column-gap: 16px;
+   row-gap: 50px;
 }
 
 .car-selection-form__car-type {
-   // display: flex;
    column-gap: 30px;
    grid-column: 6 span;
 }
@@ -58,6 +58,21 @@ h2 {
    }
 }
 
-.car-selection-form__price {
+.car-selection__select {
    grid-column: 3 span;
+}
+.car-selection-form__price {
+   display: flex;
+   grid-column: 3 span;
+}
+.car-selection-form__submit {
+   grid-column: 3 span;
+   display: flex;
+   padding: 20px 0;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   border: none;
+   background: var(--color-red);
+   color: inherit;
 }
