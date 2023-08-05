@@ -28,8 +28,28 @@
             </label>
          </fieldset>
 
-         <select class="car-selection__select" id="" name="model"></select>
-         <select class="car-selection__select" id="" name="model"></select>
+         <div class="car-selection__select">
+            <div class="car-selection-select__dropdown">
+               Модель
+               <span class="car-selection-select__dropdown-icon"
+                  ><svg>
+                     <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
+               ></span>
+               <ul class="car-selection-select__options-list">
+                  <li data-value="kia">
+                     <span class="btn_reset">Kia</span>
+                  </li>
+                  <li data-value="vw">
+                     <span class="btn_reset">Volkwagen</span>
+                  </li>
+                  <li data-value="mazda">
+                     <span class="btn_reset">Mazda</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- <select class="car-selection__select" id="" name="model"></select> -->
 
          <fieldset class="car-selection-form__price">
             <legend class="visually-hidden">Установить диапазон цен</legend>
