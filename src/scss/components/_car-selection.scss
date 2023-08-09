@@ -91,6 +91,7 @@
    align-items: center;
    grid-column: 3 span;
    overflow: auto;
+
 }
 
 .car-selection-select__dropdown-btn {
@@ -161,6 +162,7 @@
 }
 
 .car-selection__select::-webkit-scrollbar {
+   opacity: 1;
    width: 30px;
    background-color: var(--light-grey);
 }
