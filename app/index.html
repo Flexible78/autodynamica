@@ -246,26 +246,16 @@
          <h2>Подобрать автомобиль</h2>
          <fieldset class="car-selection-form__car-type car-selection-form-car-type">
             <legend class="visually-hidden">Выбор типа авто</legend>
-            <label class="car-selection-form__radio-btn" for="car-selection-form__new">
-               <input class="radio-btn-basic" id="car-selection-form__new" name="car-type" type="radio" value="Новые" />
+            <label class="radio-btn-car-type-new">
+               <input id="car-radio-btn-car-type-new" name="car-type" type="radio" value="Новые" />
                <span>Новые</span>
             </label>
-            <label class="car-selection-form__radio-btn" for="car-selection-form__1">
-               <input
-                  class="radio-btn-basic"
-                  id="car-selection-form__1"
-                  name="car-type"
-                  type="radio"
-                  value="С пробегом" />
+            <label class="radio-btn-car-type-used">
+               <input id="radio-btn-car-type-used" name="car-type" type="radio" value="С пробегом" />
                <span>С пробегом</span>
             </label>
-            <label class="car-selection-form__radio-btn" for="car-selection-form__2">
-               <input
-                  class="radio-btn-basic"
-                  id="car-selection-form__2"
-                  name="car-type"
-                  type="radio"
-                  value="Для такси" />
+            <label class="radio-btn-car-type-taxi">
+               <input id=radio-btn-car-type-taxi" name="car-type" type="radio" value="Для такси" />
                <span>Авто для такси</span>
             </label>
          </fieldset>
@@ -279,13 +269,13 @@
                ></span>
                <ul class="car-selection-select__options-list">
                   <li data-value="audi">
-                     <span class="btn_reset"Audi</span>
+                     <span class="car-selection-select__item">Audi</span>
                   </li>
                   <li data-value="bmw1">
-                     <span class="btn_reset">BMW</span>
+                     <span class="car-selection-select__item">BMW</span>
                   </li>
                   <li data-value="bmw2">
-                     <span class="btn_reset">BMW</span>
+                     <span class="car-selection-select__item">BMW</span>
                   </li>
                </ul>
             </div>

@@ -153,3 +153,16 @@ body {
       --container-max-width: 300px;
    }
 }
+
+h2 {
+   font-weight: 600;
+   font-size: 32px;
+
+   @media (max-width: 834px) {
+      font-size: 24px;
+   }
+
+   @media (max-width: 428px) {
+      font-size: 22px;
+   }
+}

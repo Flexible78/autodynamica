@@ -1,18 +1,15 @@
 .car-selection {
    padding: 40px 0 50px;
-   color: var(--color-white);
    background-color: var(--menu-black);
 }
 
-h2 {
-   grid-column: 6 span;
-   font-weight: 600;
-   font-size: 32px;
-}
-
 .car-selection-form {
-   // column-gap: 16px;
    row-gap: 50px;
+
+   h2 {
+      grid-column: 6 span;
+      color: var(--color-white);
+   }
 }
 
 .car-selection-form__car-type {
@@ -21,40 +18,70 @@ h2 {
 }
 
 .car-selection-form-car-type {
+   position: relative;
    display: grid;
    grid-template-columns: repeat(6, 1fr);
    column-gap: 30px;
-}
+   grid-column: 6 span;
 
-/* .radio-btn-basic {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   overflow: hidden;
-   clip: rect(0 0 0 0);
-   appearance: none;
-} */
-.radio-btn-basic {
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
-   width: 0;
-   height: 0;
-   opacity: 0;
-}
+   label {
+      position: relative;
+      grid-column: 2 span;
+      cursor: pointer;
 
-.car-selection-form__radio-btn {
-   grid-column: 2 span;
+      input {
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: -1;
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+      }
 
-   span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--color-white);
-      border-radius: 4px;
-      padding: 10.5px 0;
-      background-color: transparent;
+      input + span {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: 1px solid var(--color-white);
+         border-radius: 4px;
+         padding: 10.5px 0;
+         font-weight: 500;
+         font-size: 16px;
+         text-align: center;
+         color: var(--color-white);
+         background-color: transparent;
+         transition:
+            color 0.15s ease,
+            background-color 0.15s ease-out,
+            border-color 0.1s ease,
+            outline 0.05s linear;
+         pointer-events: none;
+      }
+
+      input:focus + span {
+         outline: none;
+      }
+
+      input:focus-visible + span {
+         outline: 4px solid var(--focus-main-color);
+         outline-offset: 1px;
+      }
+
+      input:hover + span {
+         border-color: #676767;
+         color: var(--color-white);
+         background-color: #676767;
+      }
+
+      input:checked + span {
+         color: var(--color-red);
+         background-color: var(--color-white);
+      }
+   }
+
+   @media (max-width: 1258px) {
+      column-gap: 20px;
    }
 }
 
@@ -101,19 +128,18 @@ h2 {
 }
 
 .car-selection-select__options-list {
-   background-color: var(--color-white);
-
    position: absolute;
    top: 62%;
    left: 0;
    display: flex;
    flex-direction: column;
-   margin: 0;
-   padding: 0;
-   display: flex;
    align-items: top;
    grid-column: 3 span;
    width: 100%;
+   margin: 0;
+   padding: 0;
+   background-color: var(--color-white);
+
    span {
       display: block;
       padding: 10px 0 11px 28px;
