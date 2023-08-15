@@ -242,7 +242,7 @@
 
          <section class="car-selection">
    <div class="container">
-      <form class="car-selection-form grid-layout" action="#">
+      <form class="car-selection-form grid-layout" id="car-selection-form" action="#">
          <h2>Подобрать автомобиль</h2>
          <fieldset class="car-selection-form__car-type car-selection-form-car-type">
             <legend class="visually-hidden">Выбор типа авто</legend>
@@ -260,84 +260,78 @@
             </label>
          </fieldset>
 
-         <div class="car-selection__select">
-            <button class="car-selection-select__dropdown-btn">
-               <span class="car-selection-select__text">Марка</span>
-               <span class="car-selection-select__dropdown-icon"
+         <!-- select car's brand -->
+
+         <div class="select car-selection-form__select select-js open">
+            <input
+               class="select__choosen-option-value"
+               name="select-car-brand"
+               form="car-selection-form"
+               value=""
+               type="text" />
+
+            <div class="select__trigger car-selection-form__field">
+               <span class="select__trigger-text">Марка</span>
+               <span class="select__trigger-icon"
                   ><svg>
                      <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
                ></span>
-            </button>
+            </div>
 
-            <ul class="car-selection-select__options-list">
-               <li class="car-selection-select__options-list-item" data-value="audi">Audi</li>
-               <li class="car-selection-select__options-list-item" data-value="bmw">BMW</li>
-               <li class="car-selection-select__options-list-item" data-value="vw">Volkswagen</li>
-            </ul>
-            <input class="visually-hidden" name="car-selection-select-car" type="text" value="" />
-         </div>
-
-         <!-- <select class="car-selection__select" id="" name="model"></select> -->
-
-         <fieldset class="car-selection-form__price">
-            <legend class="visually-hidden">Установить диапазон цен</legend>
-            <input id="car-selection-price" name="car-selection-price" type="text" />
-            <input id="car-selection-price" name="car-selection-price" type="text" />
-         </fieldset>
-         <input class="car-selection-form__submit" type="submit" value="Подобрать " />
-         <!--
-         <div class="car-selection-select__dropdown">
-            <ul class="car-selection-select__options-list">
-               <li>
-                  <button>Audi</button>
-               </li>
-               <li>
-                  <button>Lada</button>
-               </li>
-               <li>
-                  <button>Запорожец</button>
-               </li>
-               <li>
-                  <button>Volkwagen</button>
-               </li>
-               <li>
-                  <button>Mazda</button>
-               </li>
-            </ul>
-         </div>
-         <div class="car-selection__select car-selection-select">
-            <button class="car-selection-select__trigger">
-               <span class="car-selection-select__selected-text">Модель</span>
-               <span class="car-selection-select__dropdown-icon"
-                  ><svg>
-                     <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-               ></span>
-            </button>
-            <div class="car-selection-select__dropdown">
-               <ul class="car-selection-select__options-list">
-                  <li>
-                     <button>A8</button>
-                  </li>
-                  <li>
-                     <button>A4</button>
-                  </li>
-                  <li>
-                     <button>Q5</button>
-                  </li>
-                  <li>
-                     <button>3 sedan</button>
-                  </li>
-                  <li>
-                     <button>Cabrio</button>
-                  </li>
-               </ul>
+            <div class="select__options-box">
+               <div class="select__option">Audi</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
+               <div class="select__option">BMW</div>
             </div>
          </div>
+         <!-- select model -->
+         <div class="select car-selection-form__select select-js open">
+            <input
+               class="select__choosen-option-value"
+               name="select-car-model"
+               form="car-selection-form"
+               value=""
+               type="text" />
 
-         <a class="car-selection-criterias__item" href="#">
-            <span>Цена от</span>
-            <span>Цена до</span>
-         </a> -->
+            <div class="select__trigger car-selection-form__field">
+               <span class="select__trigger-text">Модель</span>
+               <span class="select__trigger-icon">
+                  <svg><use href="img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+               </span>
+            </div>
+
+            <div class="select__options-box">
+               <div class="select__option">A1</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+               <div class="select__option">A2</div>
+            </div>
+         </div>
       </form>
    </div>
 </section>
@@ -427,6 +421,7 @@
    <script src="resources/swiper/swiper-bundle.min.js"></script>
    <script src="./js/home-page-promo-slider.js"></script>
    <script src="./js/main.js"></script>
+   <script src="./js/customSelects.js"></script>
 </body>
 
 </html>
