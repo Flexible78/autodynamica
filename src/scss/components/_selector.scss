@@ -25,9 +25,9 @@
 }
 
 .select__trigger {
-   width: 100%;
    position: relative;
    z-index: 50;
+   width: var(--trigger-width);
    border: 1px solid var(--header-black, #212121);
    border-radius: inherit;
    padding:
