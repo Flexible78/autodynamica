@@ -33,38 +33,17 @@ const optionAttributes = {
    'data-value': '',
 };
 
-function openSelect(elem) {
-   elem.classList.add('open');
-}
-function closeSelect(elem) {
-   elem.classList.remove('open');
-}
 document.addEventListener('DOMContentLoaded', () => {
    const defaultSelects = findElements('select');
    hideElement(defaultSelects);
    renderSelect(defaultSelects);
-
-   const customSelects = document.querySelectorAll('.select-js');
-
-   customSelects.forEach((select) => {
-      select.addEventListener('click', function (event) {
-         const { target } = event;
-         console.log(target);
-         console.log(this);
-         if (targe.classList.contains('select__trigger') && !this.classList.contains('open')) {
-            openSelect(this);
-         } else {
-            closeSelect(this);
-         }
-      });
-   });
 });
 
 /* Functions */
 function renderSelect(defaultSelects) {
    defaultSelects.forEach((select) => {
       const customSelect = createNode('div', customSelectAttributes, select.parentNode);
-      // customSelect.classList.add('open'); // TODO:
+      customSelect.classList.add('open'); // TODO:
       customSelect.appendChild(select);
 
       const selectTrigger = createNode('div', triggerAttributes, customSelect);
@@ -120,3 +99,35 @@ function findElements(element) {
    }
    return document.querySelectorAll(element);
 }
+
+/*
+'use strict';
+
+document.addEventListener('DOMContentLoaded', () => {
+   findElements('select');
+});
+
+/!* Functions *!/
+
+function hideElement(collection) {
+   if (collection == null) {
+      return;
+   }
+   collection.forEach((currentElement) => {
+      if (currentElement.tagName.toLowerCase() === 'select') {
+         currentElement.classList.add('hidden');
+         currentElement.setAttribute('tabindex', -1);
+         currentElement.setAttribute('aria-hidden', true);
+      } else {
+         currentElement.classList.add('visually-hidden');
+         currentElement.setAttribute('aria-hidden', true);
+      }
+   });
+}
+function findElements(element) {
+   if (document.querySelectorAll(element) == null) {
+      return;
+   }
+   return document.querySelectorAll(element);
+}
+*/
