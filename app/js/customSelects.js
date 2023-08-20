@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderSelect(defaultSelects) {
    defaultSelects.forEach((select) => {
       const customSelect = createNode('div', customSelectAttributes, select.parentNode);
-      customSelect.classList.add('open'); // TODO:
+      // customSelect.classList.add('open'); // TODO:
       customSelect.appendChild(select);
 
       const selectTrigger = createNode('div', triggerAttributes, customSelect);
