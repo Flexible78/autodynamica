@@ -1,396 +1,394 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
-   <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-   <link href="resources/swiper/swiper-bundle.min.css" rel="stylesheet" />
-   <link href="css/main.min.css" rel="stylesheet" />
-   <title>Авто динамика</title>
-</head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+      <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+      <link href="resources/swiper/swiper-bundle.min.css" rel="stylesheet" />
+      <link href="css/main.min.css" rel="stylesheet" />
+      <title>Авто динамика</title>
+   </head>
 
-
-<body class="page">
-   <div class="page__wrapper">
-      <header class="header">
-   <div class="header__top-line">
-      <div class="container">
-         <div class="header__top-inner">
-            <div class="header__top-item header-top-item header-top-item__work-hours">
-               <span class="header-top-item__icon">
-                  <svg>
-                     <use href="./img/svg/sprite.svg#ic-header-clock"></use>
-                  </svg>
-               </span>
-               <span class="header-top-item__text header-top-item__text--fw400"
-                  >Работаем ежедневно с&nbsp;9:00 до&nbsp;21:00</span
-               >
-            </div>
-
-            <a class="header__top-item header-top-item" href="#">
-               <span class="header-top-item__icon header-top-item__icon--phone">
-                  <svg>
-                     <use href="./img/svg/sprite.svg#ic-header-phone"></use>
-                  </svg>
-               </span>
-               <span class="header-top-item__text header-top-item__phone">8 800 777-77-77</span>
-               <span
-                  class="header-top-item__phone-details header-top-item__text header-top-item__text--fz12 header-top-item__text--ml"
-                  >(Звонок по&nbsp;России бесплатный)</span
-               >
-            </a>
-            <button class="header__top-item header-top-item btn_reset">
-               <span class="header-top-item__icon">
-                  <svg>
-                     <use href="./img/svg/sprite.svg#ic-header-search"></use>
-                  </svg>
-               </span>
-               <span class="header-top-item__text">Поиск</span>
-            </button>
-
-            <button class="header-top-item header__top-item header__top-item--hover-color btn_reset">
-               <a class="header-top-item__text" href="#">Обратный звонок</a>
-            </button>
-         </div>
-      </div>
-   </div>
-   <div class="header__bottom-line header-bottom-line">
-      <div class="container">
-         <div class="header__bottom-inner">
-            <a class="header__logo logo">
-               <img src="./img/logo.png" alt="Логотип" />
-            </a>
-            <nav class="main-menu header__main-menu">
-               <ul class="main-menu__list">
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Новые автомобили</span>
-                        <span class="main-menu__link-item"
-                           ><svg>
-                              <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-                        ></span>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">С пробегом</span>
-                        <span class="main-menu__link-item"
-                           ><svg>
-                              <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-                        ></span>
-                     </a>
-                  </li>
-
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Такси в кредит</span>
-                        <span class="main-menu__link-item"
-                           ><svg>
-                              <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-                        ></span>
-                     </a>
-                  </li>
-
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Автокредит</span>
-                     </a>
-                  </li>
-
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Услуги</span>
-                        <span class="main-menu__link-item"
-                           ><svg>
-                              <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-                        ></span>
-                     </a>
-                  </li>
-
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">О компании</span>
-                        <span class="main-menu__link-item"
-                           ><svg>
-                              <use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg
-                        ></span>
-                     </a>
-                  </li>
-
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Контакты</span>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-            <button class="burger header__burger btn_reset">
-               <span class="burger__icon">
-                  <span class="burger__line"> </span>
-               </span>
-            </button>
-         </div>
-      </div>
-   </div>
-</header>
-
-      <main class="main">
-         <section class="promo">
-   <div class="container">
-      <div class="swiper swiper--offsets">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-               <div class="promo-content">
-                  <div class="promo-content__info-block">
-                     <h2 class="promo-content__title">Обновленный кроссовер <span>changan cs35 plus</span></h2>
-                     <div class="promo-content__price">от 2 500 000 руб*</div>
-                     <div class="promo-content__tags">
-                        <a href="#">Гарантия <span> 5 лет </span></a>
-                        <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
-                        <a href="#">Рассрочка <span> 0% </span></a>
+   <body class="page">
+      <div class="page__wrapper">
+         <header class="header">
+            <div class="header__top-line">
+               <div class="container">
+                  <div class="header__top-inner">
+                     <div class="header__top-item header-top-item header-top-item__work-hours">
+                        <span class="header-top-item__icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-header-clock"></use></svg>
+                        </span>
+                        <span class="header-top-item__text header-top-item__text--fw400">
+                           Работаем ежедневно с&nbsp;9:00 до&nbsp;21:00
+                        </span>
                      </div>
-                     <div class="promo-content__text-bottom">
-                        *Акционное предложение, точную цену уточняйте у продавца
-                     </div>
-                  </div>
-                  <div class="promo-content__img">
-                     <img src="./img/promo-car1.png" alt="Авто" />
+
+                     <a class="header__top-item header-top-item" href="#">
+                        <span class="header-top-item__icon header-top-item__icon--phone">
+                           <svg><use href="./img/svg/sprite.svg#ic-header-phone"></use></svg>
+                        </span>
+                        <span class="header-top-item__text header-top-item__phone">8 800 777-77-77</span>
+                        <span
+                           class="header-top-item__phone-details header-top-item__text header-top-item__text--fz12 header-top-item__text--ml">
+                           (Звонок по&nbsp;России бесплатный)
+                        </span>
+                     </a>
+                     <button class="header__top-item header-top-item btn_reset">
+                        <span class="header-top-item__icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-header-search"></use></svg>
+                        </span>
+                        <span class="header-top-item__text">Поиск</span>
+                     </button>
+
+                     <button class="header-top-item header__top-item header__top-item--hover-color btn_reset">
+                        <a class="header-top-item__text" href="#">Обратный звонок</a>
+                     </button>
                   </div>
                </div>
             </div>
-            <div class="swiper-slide">
-               <div class="promo-content">
-                  <div class="promo-content__info-block">
-                     <h2 class="promo-content__title">Обновленный кроссовер <span>changan cs35 plus</span></h2>
-                     <div class="promo-content__price">от 2 500 000 руб*</div>
-                     <div class="promo-content__tags">
-                        <a href="#">Гарантия <span> 5 лет </span></a>
-                        <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
-                        <a href="#">Рассрочка <span> 0% </span></a>
-                     </div>
-                     <div class="promo-content__text-bottom">
-                        *Акционное предложение, точную цену уточняйте у продавца
-                     </div>
-                  </div>
-                  <div class="promo-content__img">
-                     <img src="./img/promo-car2.png" alt="Авто" />
-                  </div>
-               </div>
-            </div>
-            <div class="swiper-slide">
-               <div class="promo-content">
-                  <div class="promo-content__info-block">
-                     <h2 class="promo-content__title">Обновленный кроссовер <span>changan cs35 plus</span></h2>
-                     <div class="promo-content__price">от 2 500 000 руб*</div>
-                     <div class="promo-content__tags">
-                        <a href="#">Гарантия <span> 5 лет </span></a>
-                        <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
-                        <a href="#">Рассрочка <span> 0% </span></a>
-                     </div>
-                     <div class="promo-content__text-bottom">
-                        *Акционное предложение, точную цену уточняйте у продавца
-                     </div>
-                  </div>
-                  <div class="promo-content__img">
-                     <img src="./img/promo-car3.png" alt="Авто" />
-                  </div>
-               </div>
-            </div>
-            <div class="swiper-slide">
-               <div class="promo-content">
-                  <div class="promo-content__info-block">
-                     <h2 class="promo-content__title">Обновленный кроссовер <span>changan cs35 plus</span></h2>
-                     <div class="promo-content__price">от 2 500 000 руб*</div>
-                     <div class="promo-content__tags">
-                        <a href="#">Гарантия <span> 5 лет </span></a>
-                        <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
-                        <a href="#">Рассрочка <span> 0% </span></a>
-                     </div>
-                     <div class="promo-content__text-bottom">
-                        *Акционное предложение, точную цену уточняйте у продавца
-                     </div>
-                  </div>
-                  <div class="promo-content__img">
-                     <img src="./img/promo-car4.png" alt="Авто" />
-                  </div>
-               </div>
-            </div>
-            <div class="swiper-slide">
-               <div class="promo-content">
-                  <div class="promo-content__info-block">
-                     <h2 class="promo-content__title">Обновленный кроссовер <span>changan cs35 plus</span></h2>
-                     <div class="promo-content__price">от 2 500 000 руб*</div>
-                     <div class="promo-content__tags">
-                        <a href="#">Гарантия <span> 5 лет </span></a>
-                        <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
-                        <a href="#">Рассрочка <span> 0% </span></a>
-                     </div>
-                     <div class="promo-content__text-bottom">
-                        *Акционное предложение, точную цену уточняйте у продавца
-                     </div>
-                  </div>
-                  <div class="promo-content__img">
-                     <img src="./img/promo-car5.png" alt="Авто" />
+            <div class="header__bottom-line header-bottom-line">
+               <div class="container">
+                  <div class="header__bottom-inner">
+                     <a class="header__logo logo">
+                        <img src="./img/logo.png" alt="Логотип" />
+                     </a>
+                     <nav class="main-menu header__main-menu">
+                        <ul class="main-menu__list">
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">Новые автомобили</span>
+                                 <span class="main-menu__link-item">
+                                    <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                                 </span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">С пробегом</span>
+                                 <span class="main-menu__link-item">
+                                    <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">Такси в кредит</span>
+                                 <span class="main-menu__link-item">
+                                    <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">Автокредит</span>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">Услуги</span>
+                                 <span class="main-menu__link-item">
+                                    <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">О компании</span>
+                                 <span class="main-menu__link-item">
+                                    <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="main-menu__link" href="#">
+                                 <span class="main-menu__link-text">Контакты</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <button class="burger header__burger btn_reset">
+                        <span class="burger__icon">
+                           <span class="burger__line"> </span>
+                        </span>
+                     </button>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="swiper-pagination"></div>
+         </header>
+
+         <main class="main">
+            <section class="promo">
+               <div class="container">
+                  <div class="swiper swiper--offsets">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="promo-content">
+                              <div class="promo-content__info-block">
+                                 <h2 class="promo-content__title">
+                                    Обновленный кроссовер <span>changan cs35 plus</span>
+                                 </h2>
+                                 <div class="promo-content__price">от 2 500 000 руб*</div>
+                                 <div class="promo-content__tags">
+                                    <a href="#">Гарантия <span> 5 лет </span></a>
+                                    <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
+                                    <a href="#">Рассрочка <span> 0% </span></a>
+                                 </div>
+                                 <div class="promo-content__text-bottom">
+                                    *Акционное предложение, точную цену уточняйте у продавца
+                                 </div>
+                              </div>
+                              <div class="promo-content__img">
+                                 <img src="./img/promo-car1.png" alt="Авто" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="promo-content">
+                              <div class="promo-content__info-block">
+                                 <h2 class="promo-content__title">
+                                    Обновленный кроссовер <span>changan cs35 plus</span>
+                                 </h2>
+                                 <div class="promo-content__price">от 2 500 000 руб*</div>
+                                 <div class="promo-content__tags">
+                                    <a href="#">Гарантия <span> 5 лет </span></a>
+                                    <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
+                                    <a href="#">Рассрочка <span> 0% </span></a>
+                                 </div>
+                                 <div class="promo-content__text-bottom">
+                                    *Акционное предложение, точную цену уточняйте у продавца
+                                 </div>
+                              </div>
+                              <div class="promo-content__img">
+                                 <img src="./img/promo-car2.png" alt="Авто" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="promo-content">
+                              <div class="promo-content__info-block">
+                                 <h2 class="promo-content__title">
+                                    Обновленный кроссовер <span>changan cs35 plus</span>
+                                 </h2>
+                                 <div class="promo-content__price">от 2 500 000 руб*</div>
+                                 <div class="promo-content__tags">
+                                    <a href="#">Гарантия <span> 5 лет </span></a>
+                                    <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
+                                    <a href="#">Рассрочка <span> 0% </span></a>
+                                 </div>
+                                 <div class="promo-content__text-bottom">
+                                    *Акционное предложение, точную цену уточняйте у продавца
+                                 </div>
+                              </div>
+                              <div class="promo-content__img">
+                                 <img src="./img/promo-car3.png" alt="Авто" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="promo-content">
+                              <div class="promo-content__info-block">
+                                 <h2 class="promo-content__title">
+                                    Обновленный кроссовер <span>changan cs35 plus</span>
+                                 </h2>
+                                 <div class="promo-content__price">от 2 500 000 руб*</div>
+                                 <div class="promo-content__tags">
+                                    <a href="#">Гарантия <span> 5 лет </span></a>
+                                    <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
+                                    <a href="#">Рассрочка <span> 0% </span></a>
+                                 </div>
+                                 <div class="promo-content__text-bottom">
+                                    *Акционное предложение, точную цену уточняйте у продавца
+                                 </div>
+                              </div>
+                              <div class="promo-content__img">
+                                 <img src="./img/promo-car4.png" alt="Авто" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="promo-content">
+                              <div class="promo-content__info-block">
+                                 <h2 class="promo-content__title">
+                                    Обновленный кроссовер <span>changan cs35 plus</span>
+                                 </h2>
+                                 <div class="promo-content__price">от 2 500 000 руб*</div>
+                                 <div class="promo-content__tags">
+                                    <a href="#">Гарантия <span> 5 лет </span></a>
+                                    <a href="#">В&nbsp;кредит от <span> 10.5% </span></a>
+                                    <a href="#">Рассрочка <span> 0% </span></a>
+                                 </div>
+                                 <div class="promo-content__text-bottom">
+                                    *Акционное предложение, точную цену уточняйте у продавца
+                                 </div>
+                              </div>
+                              <div class="promo-content__img">
+                                 <img src="./img/promo-car5.png" alt="Авто" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="car-selection">
+               <div class="container">
+                  <form class="car-selection-form grid-layout" id="car-selection-form" action="#">
+                     <h2>Подобрать автомобиль</h2>
+                     <fieldset class="car-selection-form__car-type car-selection-form-car-type">
+                        <legend class="visually-hidden">Выбор типа авто</legend>
+                        <label class="radio-btn-car-type-new">
+                           <input id="car-radio-btn-car-type-new" name="car-type" value="Новые" type="radio" />
+                           <span>Новые</span>
+                        </label>
+                        <label class="radio-btn-car-type-used">
+                           <input id="radio-btn-car-type-used" name="car-type" value="С пробегом" type="radio" />
+                           <span>С пробегом</span>
+                        </label>
+                        <label class="radio-btn-car-type-taxi">
+                           <input id="radio-btn-car-type-taxi" name="car-type" value="Для такси" type="radio" />
+                           <span>Авто для такси</span>
+                        </label>
+                     </fieldset>
+
+                     <select name="car-brand-select">
+                        <option value="start-value">Марка</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Porshe">Porshe</option>
+                        <option value="Lada">Lada</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Hundai">Hundai</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                        <option value="BMW">BMW</option>
+                     </select>
+
+                     <select name="car-model-select">
+                        <option value="start-value">Модель</option>
+                        <option value="Audi">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                        <option value="A4">A4</option>
+                        <option value="A5">A5</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                        <option value="A2">A2</option>
+                     </select>
+                  </form>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+            <div class="container footer__container">
+               <a class="logo footer__logo" href="#">
+                  <picture>
+                     <source media="(max-width: 428px)" srcset="./img/logo-footer-360.png" />
+                     <source media="(max-width: 834px)" srcset="./img/logo-footer-834.png" />
+                     <source media="(max-width: 1258px)" srcset="./img/logo-footer-1258.png" />
+                     <img src="./img/logo-footer.png" alt="Логотип" />
+                  </picture>
+               </a>
+               <div class="footer__actions">
+                  <address class="footer__contacts footer-contacts">
+                     <div class="footer-contacts__work-hours">Ежедневно с &nbsp;9:00 до &nbsp;21:00</div>
+                     <a class="footer-contacts__phone" href="tel:+74953749488"> <span>+7 495 374-94-88</span></a>
+                     <button class="footer-contacts__call-back btn_reset">Обратный звонок</button>
+                     <a class="footer-contacts__email" href="mailto:support@auto-dinamika.com"
+                        >support@auto-dinamika.com
+                     </a>
+                     <a class="footer-contacts__address" href="#" target="_blank">
+                        г. Москва, ул. Крылатская, д.&nbsp;2, корп.&nbsp;4
+                     </a>
+                  </address>
+                  <nav>
+                     <h3><a href="#">Автомобили</a></h3>
+                     <ul>
+                        <li><a href="#">Новые автомобили</a></li>
+                        <li><a href="#">Автомобили с пробегом</a></li>
+                        <li><a href="#">Автомобили для такси</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3><a href="#">Варианты кузова</a></h3>
+                     <ul>
+                        <li><a href="#">Седан</a></li>
+                        <li><a href="#">Кроссовер</a></li>
+                        <li><a href="#">Универсал</a></li>
+                        <li><a href="#">Внедорожник</a></li>
+                        <li><a href="#">Хэтчбек</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3><a href="#">Услуги</a></h3>
+                     <ul>
+                        <li><a href="#">Кредит</a></li>
+                        <li><a href="#">Trade-In</a></li>
+                        <li><a href="#">Выкуп автомобилей</a></li>
+                        <li><a href="#">Услуги для такси</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h3><a href="#">О компании</a></h3>
+                     <ul>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="footer__text-block">
+                  <p>
+                     Обращаем ваше внимание на&nbsp;то, что данный Интернет-сайт носит исключительно информационный
+                     характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой
+                     положениями статьей 435, 437, 494 Гражданского кодекса Российской Федерации. Для получения
+                     подробной информации о&nbsp;стоимости автомобилей обращайтесь в&nbsp;отдел продаж.*Представленные
+                     на&nbsp;сайте калькуляции кредита на&nbsp;автомобиль являются приблизительными, точная стоимость
+                     финансирования рассчитывается кредитным специалистом в&nbsp;зависимости от&nbsp;индивидуальных
+                     параметров заёмщика при предоставлении двух документов в&nbsp;организацию.
+                  </p>
+                  <p>
+                     ООО &laquo;АВТО-ГАРАНТ&raquo;, ИНН&nbsp;/ КПП 7734459351&nbsp;/ 73401001, Юр. адрес: 123098, г.
+                     Москва, ул. Рогова, д.&nbsp;12, помещение 2П
+                  </p>
+                  <p>
+                     <a href="#">Политика конфиденциальности&nbsp;</a>|
+                     <a href="#">Пользовательское соглашение&nbsp;</a>
+                     <a href="#">Условия кредитования</a>
+                  </p>
+               </div>
+            </div>
+         </footer>
       </div>
-   </div>
-</section>
-
-         <section class="car-selection">
-   <div class="container">
-      <form class="car-selection-form grid-layout" id="car-selection-form" action="#">
-         <h2>Подобрать автомобиль</h2>
-         <fieldset class="car-selection-form__car-type car-selection-form-car-type">
-            <legend class="visually-hidden">Выбор типа авто</legend>
-            <label class="radio-btn-car-type-new">
-               <input id="car-radio-btn-car-type-new" name="car-type" type="radio" value="Новые" />
-               <span>Новые</span>
-            </label>
-            <label class="radio-btn-car-type-used">
-               <input id="radio-btn-car-type-used" name="car-type" type="radio" value="С пробегом" />
-               <span>С пробегом</span>
-            </label>
-            <label class="radio-btn-car-type-taxi">
-               <input id="radio-btn-car-type-taxi" name="car-type" type="radio" value="Для такси" />
-               <span>Авто для такси</span>
-            </label>
-         </fieldset>
-
-         <select name="car-brand-select">
-            <option value="start-value">Марка</option>
-            <option value="Audi">Audi</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">Porshe</option>
-            <option value="BMW">Lada</option>
-            <option value="BMW">Toyota</option>
-            <option value="BMW">Subaru</option>
-            <option value="BMW">Honda</option>
-            <option value="BMW">Kia</option>
-            <option value="BMW">Hundai</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-            <option value="BMW">BMW</option>
-         </select>
-
-         <select name="car-model-select">
-            <option value="start-value">Модель</option>
-            <option value="Audi">A1</option>
-            <option value="A2">A2</option>
-            <option value="A3">A3</option>
-            <option value="A4">A4</option>
-            <option value="A5">A5</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-            <option value="A2">A2</option>
-         </select>
-      </form>
-   </div>
-</section>
-
-      </main>
-      <footer class="footer">
-   <div class="container footer__container">
-      <a class="logo footer__logo" href="#">
-         <picture>
-            <source media="(max-width: 428px)" srcset="./img/logo-footer-360.png" />
-            <source media="(max-width: 834px)" srcset="./img/logo-footer-834.png" />
-            <source media="(max-width: 1258px)" srcset="./img/logo-footer-1258.png" />
-            <img src="./img/logo-footer.png" alt="Логотип" />
-         </picture>
-      </a>
-      <div class="footer__actions">
-         <address class="footer__contacts footer-contacts">
-            <div class="footer-contacts__work-hours">Ежедневно с &nbsp;9:00 до &nbsp;21:00</div>
-            <a class="footer-contacts__phone" href="tel:+74953749488"> <span>+7 495 374-94-88</span></a>
-            <button class="footer-contacts__call-back btn_reset">Обратный звонок</button>
-            <a class="footer-contacts__email" href="mailto:support@auto-dinamika.com">support@auto-dinamika.com </a>
-            <a class="footer-contacts__address" href="#" target="_blank"
-               >г. Москва, ул. Крылатская, д.&nbsp;2, корп.&nbsp;4</a
-            >
-         </address>
-         <nav>
-            <h3><a href="#">Автомобили</a></h3>
-            <ul>
-               <li><a href="#">Новые автомобили</a></li>
-               <li><a href="#">Автомобили с пробегом</a></li>
-               <li><a href="#">Автомобили для такси</a></li>
-            </ul>
-         </nav>
-         <nav>
-            <h3><a href="#">Варианты кузова</a></h3>
-            <ul>
-               <li><a href="#">Седан</a></li>
-               <li><a href="#">Кроссовер</a></li>
-               <li><a href="#">Универсал</a></li>
-               <li><a href="#">Внедорожник</a></li>
-               <li><a href="#">Хэтчбек</a></li>
-            </ul>
-         </nav>
-         <nav>
-            <h3><a href="#">Услуги</a></h3>
-            <ul>
-               <li><a href="#">Кредит</a></li>
-               <li><a href="#">Trade-In</a></li>
-               <li><a href="#">Выкуп автомобилей</a></li>
-               <li><a href="#">Услуги для такси</a></li>
-            </ul>
-         </nav>
-         <nav>
-            <h3><a href="#">О компании</a></h3>
-            <ul>
-               <li><a href="#">Отзывы</a></li>
-               <li><a href="#">Новости</a></li>
-               <li><a href="#">Партнеры</a></li>
-               <li><a href="#">Контакты</a></li>
-               <li><a href="#">Карта сайта</a></li>
-            </ul>
-         </nav>
-      </div>
-      <div class="footer__text-block">
-         <p>
-            Обращаем ваше внимание на&nbsp;то, что данный Интернет-сайт носит исключительно информационный характер
-            и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями статьей 435,
-            437, 494 Гражданского кодекса Российской Федерации. Для получения подробной информации о&nbsp;стоимости
-            автомобилей обращайтесь в&nbsp;отдел продаж.*Представленные на&nbsp;сайте калькуляции кредита
-            на&nbsp;автомобиль являются приблизительными, точная стоимость финансирования рассчитывается кредитным
-            специалистом в&nbsp;зависимости от&nbsp;индивидуальных параметров заёмщика при предоставлении двух
-            документов в&nbsp;организацию.
-         </p>
-         <p>
-            ООО &laquo;АВТО-ГАРАНТ&raquo;, ИНН&nbsp;/ КПП 7734459351&nbsp;/ 73401001, Юр. адрес: 123098, г. Москва, ул.
-            Рогова, д.&nbsp;12, помещение 2П
-         </p>
-         <p>
-            <a href="#">Политика конфиденциальности&nbsp;</a>| <a href="#">Пользовательское соглашение&nbsp;</a>
-            <a href="#">Условия кредитования</a>
-         </p>
-      </div>
-   </div>
-</footer>
-
-   </div>
-   <script src="resources/swiper/swiper-bundle.min.js"></script>
-   <script src="./js/home-page-promo-slider.js"></script>
-   <script src="./js/main.js"></script>
-   <script src="./js/customSelects.js"></script>
-</body>
-
+      <script src="resources/swiper/swiper-bundle.min.js"></script>
+      <script src="./js/home-page-promo-slider.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/customSelects.js"></script>
+   </body>
 </html>

@@ -1,18 +1,20 @@
 .burger {
+   @include focus;
+
    position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
    width: 24px;
    height: 24px;
+
    &::before {
-      position: absolute;
-      inset: 0;
       content: "";
-      background-color: var(--menu-black);
+      position: absolute;
       border-radius: 100%;
+      background-color: var(--menu-black);
+      inset: 0;
    }
-   @include focus;
 }
 
 .burger__icon {
