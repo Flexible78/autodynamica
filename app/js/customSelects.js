@@ -32,7 +32,6 @@ const optionAttributes = {
    'aria-selected': false,
    'data-value': '',
 };
-
 function openSelect(elem) {
    elem.classList.add('open');
 }
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderSelect(defaultSelects) {
    defaultSelects.forEach((select) => {
       const customSelect = createNode('div', customSelectAttributes, select.parentNode);
-      // customSelect.classList.add('open'); // TODO:
+      customSelect.classList.add('open'); // TODO:
       customSelect.appendChild(select);
 
       const selectTrigger = createNode('div', triggerAttributes, customSelect);
@@ -120,3 +119,35 @@ function findElements(element) {
    }
    return document.querySelectorAll(element);
 }
+
+/*
+'use strict';
+
+document.addEventListener('DOMContentLoaded', () => {
+   findElements('select');
+});
+
+/!* Functions *!/
+
+function hideElement(collection) {
+   if (collection == null) {
+      return;
+   }
+   collection.forEach((currentElement) => {
+      if (currentElement.tagName.toLowerCase() === 'select') {
+         currentElement.classList.add('hidden');
+         currentElement.setAttribute('tabindex', -1);
+         currentElement.setAttribute('aria-hidden', true);
+      } else {
+         currentElement.classList.add('visually-hidden');
+         currentElement.setAttribute('aria-hidden', true);
+      }
+   });
+}
+function findElements(element) {
+   if (document.querySelectorAll(element) == null) {
+      return;
+   }
+   return document.querySelectorAll(element);
+}
+*/

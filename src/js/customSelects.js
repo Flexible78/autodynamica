@@ -32,11 +32,31 @@ const optionAttributes = {
    'aria-selected': false,
    'data-value': '',
 };
-
+function openSelect(elem) {
+   elem.classList.add('open');
+}
+function closeSelect(elem) {
+   elem.classList.remove('open');
+}
 document.addEventListener('DOMContentLoaded', () => {
    const defaultSelects = findElements('select');
    hideElement(defaultSelects);
    renderSelect(defaultSelects);
+
+   const customSelects = document.querySelectorAll('.select-js');
+
+   customSelects.forEach((select) => {
+      select.addEventListener('click', function (event) {
+         const { target } = event;
+         console.log(target);
+         console.log(this);
+         if (target.classList.contains('select__trigger') && !this.classList.contains('open')) {
+            openSelect(this);
+         } else {
+            closeSelect(this);
+         }
+      });
+   });
 });
 
 /* Functions */
