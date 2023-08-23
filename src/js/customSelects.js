@@ -33,6 +33,7 @@ const optionAttributes = {
    'data-value': '',
 };
 
+/* Execute */
 document.addEventListener('DOMContentLoaded', () => {
    const defaultSelects = findElements('select');
    hideElement(defaultSelects);
@@ -43,13 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
    customSelects.forEach((select) => {
       select.addEventListener('click', function (event) {
          const { target } = event;
-         console.log(target);
-         console.log(this);
+
          if (target.classList.contains('select__trigger') && !this.classList.contains('open')) {
-            openSelect(this);
+            openSelect(this, '.select__trigger');
          } else {
-            closeSelect(this);
+            closeSelect(this, '.select__trigger');
          }
+
          if (target.classList.contains('select__option')) {
             pickOption(this, target);
          }
