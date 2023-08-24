@@ -33,6 +33,7 @@ const optionAttributes = {
    'data-value': '',
 };
 
+/* Execute */
 document.addEventListener('DOMContentLoaded', () => {
    const defaultSelects = findElements('select');
    hideElement(defaultSelects);
@@ -43,13 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
    customSelects.forEach((select) => {
       select.addEventListener('click', function (event) {
          const { target } = event;
-         console.log(target);
-         console.log(this);
+
          if (target.classList.contains('select__trigger') && !this.classList.contains('open')) {
-            openSelect(this);
+            openSelect(this, '.select__trigger');
          } else {
-            closeSelect(this);
+            closeSelect(this, '.select__trigger');
          }
+
          if (target.classList.contains('select__option')) {
             pickOption(this, target);
          }
@@ -86,17 +87,21 @@ function pickOption(select, selectedItem) {
    });
    selectedItem.classList.add('selected');
 }
-function openSelect(elem) {
+function openSelect(elem, find) {
    elem.classList.add('open');
+   const trigger = elem.querySelector(find);
+   trigger.setAttribute('aria-expanded', true);
 }
-function closeSelect(elem) {
+
+function closeSelect(elem, find) {
    elem.classList.remove('open');
+   const trigger = elem.querySelector(find);
+   trigger.setAttribute('aria-expanded', false);
 }
 
 function renderSelect(defaultSelects) {
    defaultSelects.forEach((select) => {
       const customSelect = createNode('div', customSelectAttributes, select.parentNode);
-      customSelect.classList.add('open'); // TODO:
       customSelect.appendChild(select);
 
       const selectTrigger = createNode('div', triggerAttributes, customSelect);
