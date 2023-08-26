@@ -118,6 +118,11 @@
       color: var(--option-hover-color, #fff);
       background-color: var(--option-hover-bgc);
    }
+
+   &.selected {
+      color: var(--option-hover-color, #fff);
+      background-color: var(--option-hover-bgc);
+   }
 }
 
 .select.open {

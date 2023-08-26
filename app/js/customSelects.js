@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
             pickOption(this, target);
          }
       });
+      select.addEventListener('keydown', (event) => {
+         if (event.code === 'ArrowDown') {
+            event.preventDefault();
+            if (!this.classList.contains('open')) {
+               openSelect(this, '.select__trigger');
+            }
+         }
+      });
    });
 });
 
@@ -112,10 +120,24 @@ function renderSelect(defaultSelects) {
       selectTrigger.setAttribute('aria-controls', optionsBox.id);
 
       for (let index = 0; index < select.options.length; index++) {
+         select.options[0].setAttribute('disabled', '');
+         select.options[0].setAttribute('selected', '');
+
          const currentOption = select.options[index];
          const option = createNode('div', optionAttributes, optionsBox);
+
          option.id = `${select.name}-option-${index}`;
          option.dataset.value = currentOption.value;
+
+         if (currentOption.hasAttribute('disabled')) {
+            option.classList.add('visually-hidden');
+         }
+         if (currentOption.hasAttribute('selected')) {
+            option.setAttribute('aria-selected', true);
+            option.classList.add('selected');
+            selectTrigger.setAttribute('aria-activedescendant', `${option.id}`);
+         }
+
          option.innerHTML = currentOption.innerHTML;
       }
    });
