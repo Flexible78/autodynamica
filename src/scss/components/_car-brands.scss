@@ -1,8 +1,53 @@
 .car-brands__container{
    padding: 100px 0;
+   background-color: var(--color-white);
+   font-size: 13px;
+   font-weight: 500;
+   color: var(--header-black);
+}
+
+.car-brands__top-line {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   span {
+      color: var(--menu-dark-grey);
+      font-size: 16px;
+      font-weight: 400;
+   }
 }
 
 .car-brands__title {
+   align-items: center;
    font-weight: 600;
    font-size: 32px;
 }
+
+.car-brands__list {
+   margin-top: 56px;
+}
+
+.car-brands-list {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   // column-gap: 10px;
+   li {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 10px 14px;
+      border-radius: 4px;
+      border: 1px solid var(--light-grey);
+      background: #FFF;
+      h3 {
+         text-align: center;
+      }
+   }
+}
+
+
+
+
