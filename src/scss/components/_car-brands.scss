@@ -10,6 +10,11 @@
          grid-column: 6 span;
       }
    }
+}
+
+.show-more-wrapper {
+   grid-column: 12 span;
+   margin-top: 39px;
 
    ul {
       display: grid;
@@ -18,7 +23,6 @@
       row-gap: 7px;
       justify-content: center;
       grid-column: 12 span;
-      margin-top: 39px;
       font-weight: 500;
       font-style: normal;
       font-size: 13px;
@@ -70,14 +74,37 @@
          margin-top: 20px;
       }
    }
+
+   .show-more-btn {
+      display: block;
+      grid-column: 12 span;
+      margin: 50px auto 0;
+      border: none;
+      border-radius: 4px;
+      padding: 20px 106px;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--color-white);
+      background-color: var(--color-red);
+      cursor: pointer;
+
+      @media (max-width: 1258px) {
+         padding: 20px 96px;
+      }
+
+      @media (max-width: 834px) {
+         grid-column: 6 span;
+         padding: 20px 76px;
+      }
+   }
 }
 
 .car-brands__show-all-link {
+   justify-self: right;
    grid-column: 4 span;
    margin-top: 14px;
    font-weight: 400;
    font-size: 16px;
-   justify-self: right;
    color: var(--menu-dark-grey);
    transition: font-weight 0.1s ease-in-out, color 0.11s;
 
@@ -87,32 +114,9 @@
    }
 
    @media (max-width: 834px) {
+      justify-self: left;
       grid-column: 6 span;
       margin-top: 20px;
       font-size: 14px;
-      justify-self: left;
-   }
-}
-
-.car-brands__show-more-btn {
-   justify-self: center;
-   grid-column: 12 span;
-   margin-top: 50px;
-   border: none;
-   border-radius: 4px;
-   padding: 20px 106px;
-   font-weight: 500;
-   font-size: 16px;
-   color: var(--color-white);
-   background-color: var(--color-red);
-   cursor: pointer;
-
-   @media (max-width: 1258px) {
-      padding: 20px 96px;
-   }
-
-   @media (max-width: 834px) {
-      grid-column: 6 span;
-      padding: 20px 76px;
    }
 }

@@ -14,3 +14,4 @@ package.json
 package-lock.json
 /src/resources/swiper/
 /src/js/home-page-promo-slider.js
+/src/js/show-more.js
